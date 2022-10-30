@@ -1,0 +1,26 @@
+{
+  "name": "npm-signals",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/index.ts",
+    "child1": "node dist/child.js",
+    "child2": "echo Starting && node dist/child.js"
+  },
+  "keywords": [],
+  "author": "Segev Finer <segev208@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^6.1.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "16",
+    "tsx": "^3.11.0",
+    "typescript": "^4.8.4"
+  }
+}
